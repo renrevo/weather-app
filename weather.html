@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/weather.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="weather-container">
+            <div class="search-bar">
+                <input type="text" placeholder="City" id="search-input">
+                <button id="search-btn">Search</button>
+            </div>
+            <div class="output-panel">
+                <div class="city-panel">
+                    <div class="temperature">
+                        <h1><span class="js-temp" id="city-temp"></span><span class="unit">C</span></h1>
+                        <p>Temperature</p>
+                    </div>
+                    <div class="city">
+                        <h2><span id="city-name">City Name</span></h2>
+                        <p>City</p>
+                    </div>
+                </div>
+            </div>
+            <div class="output-panel">
+                <div class="weather-panel">
+                    <div class="humidity">
+                        <h1><span id="humidity-level"></span>%</h1>
+                        <p>Humidity</p>
+                    </div>
+                    <div class="temperatue-panel">
+                        <div class="min-max-temp">
+                            <div class="temperature-box">
+                                <h2><span class="js-temp" id="min-temp"></span><span class="unit">C</span></h2>
+                                <p>Min.</p>
+                            </div>
+                            <div class="temperature-box">
+                                <h2><span class="js-temp" id="max-temp"></span><span class="unit">C</span></h2>
+                                <p>Max.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-unit-change" id="change-unit-btn">Change Unit</button>
+        </div>
+    </div>
+    <footer>
+        <p>Made by Prateek</p>
+    </footer>
+    <!-- javascript -->
+    <script src="js/weather.js"></script>
+</body>
+
+</html>

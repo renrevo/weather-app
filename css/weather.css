@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(52deg, rgba(2, 0, 36, 1) 1%, rgba(42, 221, 149, 1) 49%, rgba(0, 212, 255, 1) 100%);
+    background-size: cover;
+    background-position: center;
+}
+
+.weather-container {
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #fff;
+    text-align: center;
+}
+
+.search-bar {
+    padding: 10px;
+}
+
+#search-input {
+    padding: 5px 10px;
+    width: 70%;
+    font-size: 20px;
+    height: 50px;
+    color: rgb(226, 226, 226);
+    float: left;
+    display: block;
+    background: transparent;
+    border: 1px solid rgb(233, 233, 233);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#search-input:focus {
+    background: rgb(248, 248, 248);
+    color: rgb(17, 17, 17);
+}
+
+button {
+    width: 30%;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(15, 158, 134);
+    color: #fff;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    align-content: center;
+}
+
+.btn-unit-change {
+    width: 100%;
+    border-top-right-radius: 0;
+    border-top: 1px solid #fff;
+}
+
+button:hover {
+    background-color: rgba(15, 158, 134, .8);
+}
+
+.output-panel {
+    padding: 10px;
+    width: 50%;
+    height: 180px;
+    float: left;
+    background-color: rgb(15, 158, 134);
+    text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+.temperature {
+    cursor: pointer;
+}
+
+.temperature-box {
+    width: 50%;
+    float: left;
+}
+
+.humidity,
+.temperature {
+    height: 60px;
+}
+
+.temperature,
+.city,
+.humidity,
+.min-max-temp {
+    margin: 20px 0;
+}
+
+#city-name{
+    text-transform: capitalize;
+}
+
+footer{
+    background: rgba(0,0,0,0.3);
+    width: 100%;
+    text-align: center;
+    color: #f8f8f8;
+    text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 20px 0;
+}
+
+@media only screen and (min-width: 480px) {
+
+    .weather-container {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+
+    .weather-container {
+        width: 55%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .weather-container {
+        width: 45%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+
+    .weather-container {
+        width: 37%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .weather-container {
+        width: 32%;
+    }
+}
