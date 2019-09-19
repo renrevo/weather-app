@@ -11,7 +11,7 @@ body {
 .container {
     position: relative;
     height: 100vh;
-    background: linear-gradient(52deg, rgba(2, 0, 36, 1) 1%, rgba(42, 221, 149, 1) 49%, rgba(0, 212, 255, 1) 100%);
+    background: linear-gradient(45deg, rgba(118, 83, 131, 0.45) 0%, rgba(118, 83, 131, 0.45) 12.5%,rgba(183, 152, 78, 0.45) 12.5%, rgba(183, 152, 78, 0.45) 25%,rgba(226, 198, 43, 0.45) 25%, rgba(226, 198, 43, 0.45) 37.5%,rgba(97, 60, 149, 0.45) 37.5%, rgba(97, 60, 149, 0.45) 50%,rgba(161, 129, 96, 0.45) 50%, rgba(161, 129, 96, 0.45) 62.5%,rgba(204, 175, 60, 0.45) 62.5%, rgba(204, 175, 60, 0.45) 75%,rgba(140, 106, 114, 0.45) 75%, rgba(140, 106, 114, 0.45) 87.5%,rgba(247, 221, 25, 0.45) 87.5%, rgba(247, 221, 25, 0.45) 100%),linear-gradient(135deg, rgb(38, 243, 105),rgb(56, 237, 253))
     background-size: cover;
     background-position: center;
 }
